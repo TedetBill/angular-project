@@ -1,0 +1,12 @@
+<li [ngStyle]="{background: getColor()}" class="list-group-item">
+	<div>
+		<h4> {{postTitle}}</h4>
+	</div>
+	<p> {{postContent}}</p>
+	<p> Nombre de like : {{numberOfLoves}}</p>
+	<button class="btn btn-success" 
+              (click)="onLike()">LIKE</button>
+    <button class="btn btn-danger" 
+              (click)="onDisLike()">DISLIKE</button>
+</li>
+
